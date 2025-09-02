@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="BankAccountDetails"  icon-name="utility:copy_to_clipboard">
+        <div class="slds-p-around_medium">
+            <template lwc:if={accountNumber}>
+                <div class="slds-grid slds-wrap slds-m-bottom_small">
+                    <div class="slds-col slds-size_2-of-3">
+                        <strong>AccountNumber:</strong>{accountNumber}
+
+                    </div>
+                    <lighnting-button-icon icon-name="utility:copy"
+                                        alternative-text="Copy AccountNumber"
+                                        onclick={copyAccountNumber}
+                                        title="Copy AccountNumber">
+                    </lighnting-button-icon>
+                </div>
+            </template>
+
+        </div>
+    </lightning-card>
+    
+</template>
