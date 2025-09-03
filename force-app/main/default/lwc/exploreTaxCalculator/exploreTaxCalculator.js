@@ -12,6 +12,7 @@ export default class ExploreTaxCalculator extends LightningElement {
 
         if(field === 'totalAmount'){
             this.totalAmount = event.target.value;
+            console.log(this.totalAmount);
         }
         if(field === 'taxPercentage'){
             this.taxPercentage = event.target.value;
